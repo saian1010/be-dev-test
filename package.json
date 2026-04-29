@@ -1,0 +1,9 @@
+{
+  "name": "be-dev-test",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "jquery": "^3.7.1",
+    "paginationjs": "^2.6.0"
+  }
+}

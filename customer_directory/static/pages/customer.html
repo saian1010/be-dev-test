@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customer Details</title>
+    <link rel="stylesheet" href="/static/vendor/bootstrap.min.css" />
+  </head>
+  <body class="bg-body-tertiary">
+    <main class="container py-4 py-md-5">
+      <section class="mb-4 mb-lg-5">
+        <p class="mb-2 small text-uppercase text-secondary fw-semibold">Backend Developer Test</p>
+        <a class="small fw-medium text-decoration-none" href="/">Back to customer list</a>
+        <div class="mt-3 mb-3">
+          <h1 id="customer-name" class="display-6 fw-bold text-body mb-2">Customer Details</h1>
+          <p id="customer-summary" class="mb-0 text-secondary">Loading customer details...</p>
+        </div>
+      </section>
+
+      <section class="card border-0 shadow-sm detail-shell">
+        <div class="card-body p-4 p-md-5">
+          <div class="d-flex flex-column flex-md-row justify-content-between gap-3 align-items-md-start mb-4">
+            <div>
+              <p class="small text-uppercase text-secondary fw-semibold mb-2">Profile details</p>
+              <div id="detail-status" class="small text-warning-emphasis" aria-live="polite"></div>
+            </div>
+          </div>
+
+          <dl id="customer-details" class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-3 mb-0"></dl>
+        </div>
+      </section>
+    </main>
+
+    <script src="/static/resources/customer.js"></script>
+  </body>
+</html>
